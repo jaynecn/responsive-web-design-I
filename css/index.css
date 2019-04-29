@@ -89,10 +89,9 @@ header {
 		align-items: center;
 		border-bottom: 2px solid black;
 		padding: 10px 10px;
+		width: 100%;
 	}
-
-
-	@media (max-width: 750px) {
+	@media (max-width: 800px) {
 
 		header {
 			display: flex;
@@ -117,8 +116,7 @@ header {
 			width: 100%;
 		}
 	}
-
-	@media (max-width: 550px) {
+	@media (max-width: 500px) {
 
 		header {
 			display: flex;
@@ -165,7 +163,7 @@ section{
 	margin-top: 60px;
 	padding: 20px 10px;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
 	section {
 		flex-direction: column;
 		justify-content: center;
@@ -175,7 +173,7 @@ section{
 .big{
 	display: column;
 	text-align: center;
-	margin: 20px 10px;
+	margin: 10px 10px;
 }
 
 .button {
@@ -190,11 +188,10 @@ margin: 30px;
 
 .globe{
 	display: flex;
-	margin: 20px 20px;
-	width: 40%;
-	height: 40%;
+	width: 45%;
+	height: 45%;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
 	.globe {
 		display: none;
 	}
@@ -204,9 +201,18 @@ main {
 	display: flex;
 	flex-direction: space-around;
 	padding: 20px 10px;
+	margin: 0px 10px;
+	width: 100%;
 }
-
-@media (max-width: 550px) {
+@media (max-width: 800px) {
+	main {
+		padding: 20px 20px;
+	}
+	main p {
+		padding: 10px 10px;
+	}
+}
+@media (max-width: 500px) {
 	main {
 		display: block;
 		flex-direction: column;
@@ -221,11 +227,14 @@ main {
 	padding: 20px 30px;
 }
 
-main .middle-img{
+blue-image .middle-img{
 	display: flex; 
+	justify-content: center;
 	padding-bottom: 30px;
+	width: 90%;
+	height: 90%;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
 	.blue-image {
 		display: flex;
 		justify-content: center;
@@ -239,13 +248,16 @@ main .middle-img{
 
 span {
 	display: flex;
-	flex-direction: space-around;
+	justify-content: space-between;
 	padding: 10px 20px;
+	border-bottom: 1px solid black;
+	width: 100%;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
 	span {
 		display: block;
 		flex-direction: column;
+		
 	}
 	p {
 		padding: 10px 10px;
@@ -261,13 +273,14 @@ h3{
 footer {
 	display: flex;
 	flex-direction: column;
-	border-top: 1px solid black;
-	padding: 10px 10px;
+	/* border-top: 1px solid black; */
+	padding: 0px 10px;
+	width: 100%;
 	}
 
 footer address {
 	order: 0;
-	padding: 20px 10px;
+	padding: 10px 10px;
 }
 footer .copyright {
 	display: flex;
