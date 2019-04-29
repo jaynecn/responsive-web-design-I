@@ -76,51 +76,48 @@ h1, h2, h3, h4, h5 {
 
 body {
 	width: 900px;
-	margin: auto;
+	margin: 0 auto;
 }
 header {
-		/* display: flex; */
-		/* align-items: center; */
+	display: flex;
 	}
 
 	nav{
+		width: 900px;
 		display: flex;
-		flex-direction: space-between;
+		flex-wrap: wrap;
+		justify-content: space-between;
 		align-items: center;
 		background-color: rgb(203, 227, 247);
-		overflow: hidden;
+		/* overflow: hidden; */
 		border-bottom: 2px solid black;
-		display: block;
+		/* display: block; */
 		position: fixed;
-		width: 900px;
+		/* width: 900px; */
 		top: 0;
-		padding: 30px 10px;
+		padding: 10px 10px;
 	}
 
 nav a{
 	color: gray;
-	padding: 30px 10px;
+	padding: 5px 10px;
 	text-decoration: none;
-
 }
-
-
-/* .logo{
-	display: flex;
-} */
 
 
 section{
 	display: flex;
+	order: 1;
 	font-size: 90px;
 	font-family:'Bangers';
-	padding: 40px 10px;
+	margin-top: 60px;
+	padding: 20px 10px;
 }
 
 .big{
 	display: column;
 	text-align: center;
-	padding: 40px 10px;
+	margin: 20px 10px;
 }
 
 .button {
@@ -135,8 +132,9 @@ margin: 30px;
 
 .globe{
 	display: flex;
-	width: 50%;
-	height: 50%;
+	margin: 20px 20px;
+	width: 40%;
+	height: 40%;
 }
 
 main {
@@ -150,38 +148,20 @@ main {
 	flex-direction: column;
 	padding: 20px 30px;
 }
-/* .box2{
-	display: inline-block;
-	box-sizing: border-box;
-	margin: 40px 5px;
-	width: 410px;
-} */
+
 main .middle-img{
 	margin-bottom: 30px;
 }
 
-/* .box3{
-	display: inline-block;
-	padding: 5px 10px;
-	width: 250px;
-} */
-/* .box4{
-	display: inline-block;
-	padding: 5px 10px;
-	width: 250px;
-} */
-/* .box5{
-	display: inline-block;
-	padding: 5px 10px;
-	width: 250px;
-} */
-
 span {
 	display: flex;
 	flex-direction: space-around;
+	padding: 0 20px;
 }
 
-span .cursive{font-family: 'Monserrat';
+span .cursive{
+	font-family: 'Monserrat';
+	padding: 10px 0;
 }
 
 footer{
